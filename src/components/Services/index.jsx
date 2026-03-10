@@ -23,13 +23,13 @@ const services = [
     description:
       "For bedrifter som vil ha en mer gjennomført nettside med tydelig struktur og bedre funksjonalitet.",
     features: [
-      "5–10 sider",
+      "3-5 sider",
       "Skreddersydd design",
       "Ytelsesoptimalisering",
       "Dynamisk innhold (CMS)",
-      "3 måneder support inkludert",
+      "3 måneder vedlikehold inkludert",
     ],
-    cta: "Mest aktuell",
+    cta: "Be om pristilbud",
     featured: true,
   },
   {
@@ -43,7 +43,7 @@ const services = [
       "Administrasjonspanel (CMS)",
       "Spesialtilpasninger",
       "Integrasjoner ved behov",
-      "6 måneder support inkludert",
+      "6 måneder vedlikehold inkludert",
     ],
     cta: "Be om pristilbud",
   },
@@ -53,7 +53,7 @@ const extras = [
   {
     title: "Nettbutikk",
     price: "Fra 19.900 kr",
-    text: "For mindre butikker som vil starte salg på nett med en ren og moderne løsning.",
+    text: "For butikker som vil starte salg på nett med en ren og moderne løsning.",
   },
   {
     title: "Vedlikehold",
@@ -90,7 +90,7 @@ export default function Services() {
             {services.map((service) => (
               <s.ServiceCard key={service.title} $featured={service.featured}>
                 {service.featured && (
-                  <s.FeaturedBadge>Mest populær</s.FeaturedBadge>
+                  <s.FeaturedBadge>⭐ Vår anbefaling</s.FeaturedBadge>
                 )}
 
                 <s.CardTop>

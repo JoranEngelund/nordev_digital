@@ -48,9 +48,9 @@ export default function Hero() {
             </motion.div>
 
             <motion.div variants={heroItem}>
-              <s.Title>
-                Vi bygger <s.GradientText>moderne nettsider</s.GradientText> som
-                er raske, stabile og laget for å vare.
+              <s.Title as="h1">
+                Vi bygger <s.GradientText>moderne nettsider</s.GradientText>
+                for bedrifter
               </s.Title>
             </motion.div>
 
