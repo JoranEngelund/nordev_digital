@@ -1,4 +1,4 @@
-import logo from "../../assets/nordev_nd_refined.svg";
+import logo from "../../assets/nordev_refined_logo.svg";
 import * as s from "./styledLogo";
 
 export default function Logo() {

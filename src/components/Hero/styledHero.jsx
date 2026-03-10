@@ -67,6 +67,15 @@ export const HeroSection = styled.section`
     pointer-events: none;
     z-index: 1;
   }
+
+  @media (max-width: 900px) {
+    min-height: auto;
+    padding: 7.5rem 1.25rem 7rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 7rem 1rem 6rem;
+  }
 `;
 
 export const GridOverlay = styled.div`
@@ -126,16 +135,20 @@ export const ContentWrapper = styled.div`
 
   @media (max-width: 1100px) {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 2.5rem;
+  }
+
+  @media (max-width: 700px) {
+    gap: 2rem;
   }
 `;
-
 export const LeftContent = styled.div`
   max-width: 760px;
 `;
 
 export const Badge = styled.div`
   width: fit-content;
+  max-width: 100%;
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
@@ -150,6 +163,7 @@ export const Badge = styled.div`
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  flex-wrap: wrap;
 
   span {
     width: 10px;
@@ -157,16 +171,29 @@ export const Badge = styled.div`
     border-radius: 50%;
     background: linear-gradient(135deg, #7aa2ff 0%, #8f7cff 100%);
     box-shadow: 0 0 18px rgba(122, 162, 255, 0.8);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 0.82rem;
+    padding: 0.6rem 0.85rem;
+    gap: 0.55rem;
   }
 `;
 
 export const Title = styled.h1`
   margin: 0 0 1.4rem;
   color: #f5f8ff;
-  font-size: clamp(2.9rem, 6vw, 5.9rem);
+  font-size: clamp(2.5rem, 6vw, 5.9rem);
   line-height: 0.97;
   letter-spacing: -0.04em;
   font-weight: 800;
+
+  @media (max-width: 700px) {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+    line-height: 1.02;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const GradientText = styled.span`
@@ -191,6 +218,12 @@ export const Description = styled.p`
   color: rgba(230, 237, 247, 0.78);
   font-size: clamp(1rem, 1.5vw, 1.18rem);
   line-height: 1.75;
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 export const ButtonRow = styled.div`
@@ -198,6 +231,14 @@ export const ButtonRow = styled.div`
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+
+    a {
+      width: 100%;
+    }
+  }
 `;
 
 const BaseButton = styled.a`
@@ -288,11 +329,15 @@ export const RightContent = styled.div`
   min-height: 640px;
 
   @media (max-width: 1100px) {
-    min-height: 560px;
+    min-height: 520px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
   }
 
   @media (max-width: 700px) {
-    min-height: 500px;
+    min-height: 320px;
+    max-width: 100%;
   }
 `;
 
@@ -322,14 +367,21 @@ export const FloatingCard = styled.div`
   @media (max-width: 1100px) {
     &.main-card {
       left: 50%;
-      transform: translateX(-50%);
       right: auto;
+      transform: translateX(-50%);
+      width: min(100%, 560px);
     }
   }
 
   @media (max-width: 700px) {
     &.main-card {
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: none;
       width: 100%;
+      padding: 0.8rem;
+      border-radius: 22px;
     }
   }
 `;
@@ -377,8 +429,10 @@ export const MockupBody = styled.div`
   gap: 1rem;
   min-height: 340px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
+    min-height: auto;
   }
 `;
 
@@ -471,6 +525,11 @@ export const MockupChart = styled.div`
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
+
+  @media (max-width: 700px) {
+    height: 120px;
+    margin: 1rem 0 0.8rem;
+  }
 `;
 
 export const SmallCards = styled.div`
@@ -542,16 +601,7 @@ export const MiniGlassCard = styled.div`
   }
 
   @media (max-width: 700px) {
-    width: 180px;
-    padding: 0.85rem;
-
-    h4 {
-      font-size: 0.92rem;
-    }
-
-    p {
-      font-size: 0.84rem;
-    }
+    display: none;
   }
 `;
 
@@ -598,22 +648,6 @@ export const TechOrb = styled.div`
   }
 
   @media (max-width: 700px) {
-    min-width: 72px;
-    min-height: 72px;
-    font-size: 0.85rem;
-
-    &.orb-1 {
-      top: 9rem;
-      right: 1rem;
-    }
-
-    &.orb-2 {
-      bottom: 5rem;
-      right: 0;
-    }
-
-    &.orb-3 {
-      left: 0.2rem;
-    }
+    display: none;
   }
 `;

@@ -1,0 +1,29 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradN" x1="220" y1="160" x2="600" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F56B4"/>
+      <stop offset="1" stop-color="#154B93"/>
+    </linearGradient>
+    <linearGradient id="gradD" x1="520" y1="180" x2="930" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2FA2FF"/>
+      <stop offset="1" stop-color="#176CD8"/>
+    </linearGradient>
+    <linearGradient id="gradDdark" x1="500" y1="180" x2="930" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F82E8"/>
+      <stop offset="1" stop-color="#145FC8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- N -->
+  <rect x="220" y="180" width="70" height="440" fill="url(#gradN)"/>
+  <polygon points="220,180 295,180 525,468 525,620 455,620 220,325" fill="url(#gradN)"/>
+  <rect x="455" y="180" width="70" height="440" fill="url(#gradDdark)"/>
+  <!-- dark inner cut across N -->
+  <polygon points="220,225 242,180 525,532 525,575" fill="#052B67" opacity="0.95"/>
+
+  <!-- D left stem -->
+  <rect x="555" y="180" width="70" height="440" fill="url(#gradD)"/>
+
+  <!-- D curved body -->
+  <path d="M645 180H755C878 180 970 269 970 400C970 531 878 620 755 620H645V550H752C835 550 897 489 897 400C897 311 835 250 752 250H645V180Z" fill="url(#gradD)"/>
+</svg>

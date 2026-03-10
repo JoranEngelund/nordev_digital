@@ -2,6 +2,7 @@
 import * as s from "./styledProjects";
 import termofrakt from "../../assets/projects/termofrakt.png";
 import psykolog from "../../assets/projects/psykolog.png";
+import Reveal from "../Reveal";
 
 const projects = [
   {
@@ -34,59 +35,64 @@ export default function Projects() {
       <s.GridOverlay />
 
       <s.Container>
-        <s.SectionHeading>
-          <s.Eyebrow>Utvalgte prosjekter</s.Eyebrow>
-          <s.Title>
-            Nettsider vi har <s.GradientText>lansert</s.GradientText>
-          </s.Title>
-          <s.Description>
-            To ulike bransjer, to ulike uttrykk — bygget med fokus på design,
-            tydelig kommunikasjon og en bedre digital opplevelse.
-          </s.Description>
-        </s.SectionHeading>
+        <Reveal delay={0.3}>
+          <s.SectionHeading>
+            <s.Eyebrow>Utvalgte prosjekter</s.Eyebrow>
+            <s.Title>
+              Prosjekter vi har <s.GradientText>utviklet</s.GradientText>
+            </s.Title>
+
+            <s.Description>
+              Eksempler på nettsider vi har laget for ulike virksomheter, med
+              fokus på design, struktur og god ytelse.
+            </s.Description>
+          </s.SectionHeading>
+        </Reveal>
 
         <s.ProjectsGrid>
           {projects.map((project) => (
-            <s.ProjectCard key={project.title} $accent={project.accent}>
-              <s.ProjectPreview $accent={project.accent}>
-                <s.BrowserBar>
-                  <s.BrowserDots>
-                    <span />
-                    <span />
-                    <span />
-                  </s.BrowserDots>
-                  <s.AddressBar>{project.url}</s.AddressBar>
-                </s.BrowserBar>
+            <Reveal delay={0.3}>
+              <s.ProjectCard key={project.title} $accent={project.accent}>
+                <s.ProjectPreview $accent={project.accent}>
+                  <s.BrowserBar>
+                    <s.BrowserDots>
+                      <span />
+                      <span />
+                      <span />
+                    </s.BrowserDots>
+                    <s.AddressBar>{project.url}</s.AddressBar>
+                  </s.BrowserBar>
 
-                <s.ImageWrapper>
-                  <s.ProjectImage src={project.image} alt={project.title} />
-                </s.ImageWrapper>
-              </s.ProjectPreview>
+                  <s.ImageWrapper>
+                    <s.ProjectImage src={project.image} alt={project.title} />
+                  </s.ImageWrapper>
+                </s.ProjectPreview>
 
-              <s.ProjectBody>
-                <s.ProjectCategory>{project.category}</s.ProjectCategory>
-                <s.ProjectTitle>{project.title}</s.ProjectTitle>
-                <s.ProjectDescription>
-                  {project.description}
-                </s.ProjectDescription>
+                <s.ProjectBody>
+                  <s.ProjectCategory>{project.category}</s.ProjectCategory>
+                  <s.ProjectTitle>{project.title}</s.ProjectTitle>
+                  <s.ProjectDescription>
+                    {project.description}
+                  </s.ProjectDescription>
 
-                <s.TagRow>
-                  {project.tags.map((tag) => (
-                    <s.Tag key={tag}>{tag}</s.Tag>
-                  ))}
-                </s.TagRow>
+                  <s.TagRow>
+                    {project.tags.map((tag) => (
+                      <s.Tag key={tag}>{tag}</s.Tag>
+                    ))}
+                  </s.TagRow>
 
-                <s.ActionRow>
-                  <s.LiveButton
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Se nettside
-                  </s.LiveButton>
-                </s.ActionRow>
-              </s.ProjectBody>
-            </s.ProjectCard>
+                  <s.ActionRow>
+                    <s.LiveButton
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Se nettside
+                    </s.LiveButton>
+                  </s.ActionRow>
+                </s.ProjectBody>
+              </s.ProjectCard>
+            </Reveal>
           ))}
         </s.ProjectsGrid>
       </s.Container>

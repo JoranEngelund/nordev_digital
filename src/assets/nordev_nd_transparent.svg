@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 256">
+  <defs>
+    <linearGradient id="gradD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d8cff"/>
+      <stop offset="100%" stop-color="#1b5fb8"/>
+    </linearGradient>
+    <linearGradient id="gradN" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e4f8a"/>
+      <stop offset="100%" stop-color="#153a66"/>
+    </linearGradient>
+  </defs>
+
+  <!-- N -->
+  <path d="M40 220 L40 40 L120 40 L200 180 L200 40 L260 40 L260 220 L180 220 L100 80 L100 220 Z"
+        fill="url(#gradN)"/>
+
+  <!-- D -->
+  <path d="M300 40 L380 40 
+           C450 40 480 80 480 130 
+           C480 180 450 220 380 220 
+           L300 220 Z
+           M360 90 L360 170 
+           C410 170 420 150 420 130 
+           C420 110 410 90 360 90 Z"
+        fill="url(#gradD)"/>
+</svg>
