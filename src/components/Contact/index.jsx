@@ -150,21 +150,25 @@ export default function Contact() {
                 </s.Row>
 
                 <s.Field>
-                  <s.Select
-                    id="service"
-                    name="service"
-                    defaultValue=""
-                    required
-                  >
-                    <option value="" disabled>
-                      Velg tjeneste
-                    </option>
-                    <option value="nettside">Nettside</option>
-                    <option value="redesign">Redesign</option>
-                    <option value="nettbutikk">Nettbutikk</option>
-                    <option value="vedlikehold">Vedlikehold</option>
-                    <option value="annet">Annet</option>
-                  </s.Select>
+                  <s.SelectWrapper>
+                    <s.Select
+                      id="service"
+                      name="service"
+                      defaultValue=""
+                      required
+                    >
+                      <option value="" disabled>
+                        Velg tjeneste
+                      </option>
+                      <option value="nettside">Nettside</option>
+                      <option value="redesign">Redesign</option>
+                      <option value="nettbutikk">Nettbutikk</option>
+                      <option value="vedlikehold">Vedlikehold</option>
+                      <option value="annet">Annet</option>
+                    </s.Select>
+
+                    <s.SelectArrow />
+                  </s.SelectWrapper>
                 </s.Field>
 
                 <s.Field>

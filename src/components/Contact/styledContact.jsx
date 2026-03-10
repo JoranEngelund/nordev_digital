@@ -276,11 +276,31 @@ export const Input = styled.input`
   padding: 1.5rem 1rem 0.6rem;
 `;
 
+export const SelectWrapper = styled.div`
+  position: relative;
+  width: 100%;
+`;
+
+export const SelectArrow = styled.div`
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.65);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.65);
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+`;
+
 export const Select = styled.select`
   ${sharedFieldStyles}
   height: 62px;
-  padding: 0 1rem;
+  padding: 0 3rem 0 1rem;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
   color: #f5f8ff;
 
   option {

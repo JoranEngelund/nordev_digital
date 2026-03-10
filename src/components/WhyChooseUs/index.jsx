@@ -5,19 +5,19 @@ import * as s from "./styledWhyChooseUs";
 const reasons = [
   {
     title: "Personlig oppfølging",
-    text: "Du forholder deg direkte til den som bygger løsningen. Det gir en enklere prosess, bedre kommunikasjon og mindre unødvendig friksjon.",
+    text: "Du forholder deg direkte til utvikleren som bygger nettsiden. Det gir kortere vei fra idé til løsning, tydelig kommunikasjon og en mer smidig prosess gjennom hele prosjektet.",
   },
   {
     title: "Moderne design",
-    text: "Vi lager nettsider som ser profesjonelle, oppdaterte og tillitsvekkende ut — med fokus på både desktop og mobil.",
+    text: "Nettsiden er ofte førsteinntrykket av bedriften din. Vi designer og utvikler sider som fremstår profesjonelle, moderne og tillitsvekkende – både på mobil og desktop.",
   },
   {
-    title: "Tilgjengelige priser",
-    text: "Prisene er satt for å være realistiske for små og mellomstore bedrifter som ønsker kvalitet uten klassisk byråpris.",
+    title: "Fornuftige priser",
+    text: "Vi holder prisene på et realistisk nivå for små og mellomstore bedrifter. Du får en skreddersydd løsning uten kostnadsnivået til et stort byrå.",
   },
   {
     title: "Skreddersydd løsning",
-    text: "Vi bygger ikke bare noe som ser bra ut. Vi lager en løsning som passer bedriften, målene og kundene dine.",
+    text: "Alle bedrifter er forskjellige. Derfor bygger vi løsninger fra bunnen av, tilpasset bedriftens behov, mål og kunder.",
   },
 ];
 

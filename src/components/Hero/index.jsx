@@ -43,7 +43,7 @@ export default function Hero() {
             <motion.div variants={heroItem}>
               <s.Badge>
                 <span />
-                Nordev Digital · Webutvikling for små og store bedrifter
+                Nettsider utviklet for norske bedrifter
               </s.Badge>
             </motion.div>
 
