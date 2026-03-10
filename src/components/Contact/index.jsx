@@ -2,8 +2,8 @@ import { useState } from "react";
 import * as s from "./styledContact";
 import Reveal from "../Reveal/index";
 
-const FORM_ENDPOINT = "https://formspree.io/f/xxxxabcd";
-const DIRECT_EMAIL = "kontakt@nordevdigital.no";
+const FORM_ENDPOINT = "https://formspree.io/f/xyknedkk";
+const DIRECT_EMAIL = "nordevdigital@gmail.com";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -198,7 +198,7 @@ export default function Contact() {
 
                 {status === "success" && (
                   <s.StatusMessage $type="success">
-                    Takk! Meldingen din er sendt. Vi tar kontakt så snart vi
+                    Takk! Henvendelsen din er sendt. Vi tar kontakt så snart vi
                     kan.
                   </s.StatusMessage>
                 )}

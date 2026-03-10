@@ -49,8 +49,8 @@ export default function Hero() {
 
             <motion.div variants={heroItem}>
               <s.Title as="h1">
-                Vi bygger <s.GradientText>moderne nettsider</s.GradientText>
-                for bedrifter
+                Vi bygger <s.GradientText>moderne nettsider</s.GradientText> for
+                bedrifter
               </s.Title>
             </motion.div>
 

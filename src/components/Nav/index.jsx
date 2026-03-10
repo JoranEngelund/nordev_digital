@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../Logo/index";
@@ -49,24 +50,37 @@ export default function Navigation() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <s.NavMenu>
             <s.NavItem
-              href="#tjenester"
+              as={HashLink}
+              smooth
+              to="/#tjenester"
               $active={activeSection === "tjenester"}
             >
               Tjenester
             </s.NavItem>
-
             <s.NavItem
-              href="#prosjekter"
+              as={HashLink}
+              smooth
+              to="/#prosjekter"
               $active={activeSection === "prosjekter"}
             >
               Prosjekter
             </s.NavItem>
 
-            <s.NavItem href="#om-oss" $active={activeSection === "om-oss"}>
+            <s.NavItem
+              as={HashLink}
+              smooth
+              to="/#om-oss"
+              $active={activeSection === "om-oss"}
+            >
               Om oss
             </s.NavItem>
 
-            <s.NavItem href="#kontakt" $active={activeSection === "kontakt"}>
+            <s.NavItem
+              as={HashLink}
+              smooth
+              to="/#kontakt"
+              $active={activeSection === "kontakt"}
+            >
               Kontakt
             </s.NavItem>
           </s.NavMenu>
