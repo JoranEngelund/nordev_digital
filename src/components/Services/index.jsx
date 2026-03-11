@@ -79,8 +79,8 @@ export default function Services() {
             </s.Title>
             <s.Description>
               Vi bygger nettsider og digitale løsninger for bedrifter som vil
-              fremstå profesjonelle på nett. Prisene er satt på et fornuftig
-              nivå, uten at det går på bekostning av kvalitet og uttrykk.
+              fremstå profesjonelle på nett. Løsninger tilpasses behov og
+              omfang. Ta kontakt for et uforpliktende estimat.
             </s.Description>
           </s.SectionHeading>
         </Reveal>
@@ -132,6 +132,7 @@ export default function Services() {
             Alle priser er fra-priser og avhenger av omfang, innhold,
             funksjonalitet og eventuelle integrasjoner.
           </s.Note>
+          <s.Note></s.Note>
         </Reveal>
       </s.Container>
     </s.Section>

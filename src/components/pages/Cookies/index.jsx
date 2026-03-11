@@ -39,7 +39,45 @@ export default function Cookies() {
         </s.Block>
 
         <s.Block>
-          <h2>3. Skjema og henvendelser</h2>
+          <h2>3. Google reCAPTCHA</h2>
+
+          <p>
+            For å beskytte kontaktskjemaet mot spam og automatiserte
+            forespørsler kan Nordev Digital bruke Google reCAPTCHA.
+          </p>
+
+          <p>
+            reCAPTCHA analyserer teknisk informasjon om besøket for å vurdere om
+            en forespørsel sendes av et menneske eller en bot. Dette kan
+            innebære behandling av blant annet IP-adresse og nettleserdata.
+          </p>
+
+          <p>
+            Informasjonen behandles av Google i henhold til deres
+            personvernregler og bruksvilkår.
+          </p>
+
+          <p>
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Privacy Policy
+            </a>
+            {" · "}
+            <a
+              href="https://policies.google.com/terms"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Terms of Service
+            </a>
+          </p>
+        </s.Block>
+
+        <s.Block>
+          <h2>4. Skjema og henvendelser</h2>
           <p>
             Når du sender en henvendelse via kontaktskjema eller e-post, er det
             ikke meningen at dette skal brukes til skjult sporing eller
@@ -54,7 +92,7 @@ export default function Cookies() {
         </s.Block>
 
         <s.Block>
-          <h2>4. Samtykke</h2>
+          <h2>5. Samtykke</h2>
           <p>
             Dersom Nordev Digital i fremtiden tar i bruk analyseverktøy,
             markedsføringscookies eller andre ikke-nødvendige cookies, vil vi
@@ -67,7 +105,7 @@ export default function Cookies() {
         </s.Block>
 
         <s.Block>
-          <h2>5. Administrere cookies</h2>
+          <h2>6. Administrere cookies</h2>
           <p>
             Du kan selv slette eller blokkere cookies i nettleseren din. Hvordan
             dette gjøres avhenger av hvilken nettleser du bruker.
@@ -80,7 +118,7 @@ export default function Cookies() {
         </s.Block>
 
         <s.Block>
-          <h2>6. Endringer</h2>
+          <h2>7. Endringer</h2>
           <p>
             Hvis nettsiden senere tar i bruk nye funksjoner eller tjenester som
             innebærer cookies eller annen sporing, vil denne informasjonen bli
@@ -89,7 +127,7 @@ export default function Cookies() {
         </s.Block>
 
         <s.Block>
-          <h2>7. Kontakt</h2>
+          <h2>8. Kontakt</h2>
           <p>
             Har du spørsmål om hvordan vi bruker cookies eller lignende
             teknologi, kan du kontakte oss på{" "}

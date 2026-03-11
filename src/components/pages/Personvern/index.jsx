@@ -85,7 +85,44 @@ export default function Personvern() {
         </s.Block>
 
         <s.Block>
-          <h2>6. Rettslig grunnlag</h2>
+          <h2>6. Beskyttelse mot spam</h2>
+          <p>
+            Kontaktskjemaet på nettsiden kan være beskyttet av Google reCAPTCHA.
+            Dette brukes for å hindre spam og automatiserte forespørsler.
+          </p>
+
+          <p>
+            reCAPTCHA analyserer teknisk informasjon som for eksempel
+            IP-adresse, nettleser og bruksmønster for å vurdere om en
+            forespørsel sendes av et menneske eller en automatisert tjeneste.
+          </p>
+
+          <p>
+            Bruken av reCAPTCHA er underlagt Googles personvernregler og
+            bruksvilkår.
+          </p>
+
+          <p>
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Privacy Policy
+            </a>
+            {" · "}
+            <a
+              href="https://policies.google.com/terms"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Terms of Service
+            </a>
+          </p>
+        </s.Block>
+
+        <s.Block>
+          <h2>7. Rettslig grunnlag</h2>
           <p>
             Vi behandler personopplysninger for å kunne svare på henvendelser,
             følge opp kundeforespørsler, inngå eller oppfylle avtaler og
@@ -94,7 +131,7 @@ export default function Personvern() {
         </s.Block>
 
         <s.Block>
-          <h2>7. Dine rettigheter</h2>
+          <h2>8. Dine rettigheter</h2>
           <p>Du kan blant annet be om:</p>
           <ul>
             <li>innsyn i hvilke personopplysninger vi har om deg</li>
@@ -112,7 +149,7 @@ export default function Personvern() {
         </s.Block>
 
         <s.Block>
-          <h2>8. Kontakt</h2>
+          <h2>9. Kontakt</h2>
           <p>
             Har du spørsmål om personvern eller ønsker å bruke rettighetene
             dine, kan du kontakte oss på{" "}

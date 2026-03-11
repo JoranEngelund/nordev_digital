@@ -429,3 +429,13 @@ export const StatusMessage = styled.div`
       : "rgba(255, 225, 225, 0.95)"};
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
 `;
+
+export const CaptchaNote = styled.p`
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: rgba(230, 237, 247, 0.55);
+
+  a {
+    color: rgba(230, 237, 247, 0.75);
+  }
+`;

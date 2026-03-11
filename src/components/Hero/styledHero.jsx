@@ -336,8 +336,7 @@ export const RightContent = styled.div`
   }
 
   @media (max-width: 700px) {
-    min-height: 320px;
-    max-width: 100%;
+    display: none;
   }
 `;
 
