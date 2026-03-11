@@ -57,13 +57,15 @@ export default function Footer() {
 
               <s.Text>Oslo, Norge</s.Text>
 
-              <s.Text>Orgnr:</s.Text>
+              <s.Text>Org.nr: 937 334 567</s.Text>
             </s.Column>
           </s.Columns>
         </s.Top>
 
         <s.Bottom>
-          <s.Copyright>© {new Date().getFullYear()} Nordev Digital</s.Copyright>
+          <s.Copyright>
+            © {new Date().getFullYear()} Engelund Nordev Digital
+          </s.Copyright>
 
           <s.BottomLinks>
             <a href="/personvern">Personvern</a>

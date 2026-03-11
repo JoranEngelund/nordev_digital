@@ -190,6 +190,20 @@ export default function Contact() {
                 <s.Label htmlFor="message">Hva kan vi hjelpe deg med?</s.Label>
               </s.Field>
 
+              <s.Field className="consent">
+                <s.CheckboxLabel>
+                  <input type="checkbox" name="consent" required />
+                  <span>
+                    Jeg samtykker til at Nordev Digital kan lagre og behandle
+                    opplysningene jeg sender inn i henhold til{" "}
+                    <a href="/personvern" target="_blank" rel="noreferrer">
+                      personvernerklæringen
+                    </a>
+                    .
+                  </span>
+                </s.CheckboxLabel>
+              </s.Field>
+
               <s.ButtonRow>
                 <s.SubmitButton type="submit" disabled={isSubmitting}>
                   {isSubmitting ? (

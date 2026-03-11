@@ -439,3 +439,28 @@ export const CaptchaNote = styled.p`
     color: rgba(230, 237, 247, 0.75);
   }
 `;
+export const CheckboxLabel = styled.label`
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  color: rgba(230, 237, 247, 0.75);
+
+  input {
+    margin-top: 4px;
+    accent-color: #7d8fff;
+    cursor: pointer;
+  }
+
+  a {
+    color: #9cb6ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+`;
