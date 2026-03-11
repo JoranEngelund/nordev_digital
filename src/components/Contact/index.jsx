@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as s from "./styledContact";
 
 const FORM_ENDPOINT = "https://formspree.io/f/xyknedkk";
-const DIRECT_EMAIL = "kontakt@nordevdigital.no";
+const DIRECT_EMAIL = "nordevdigital@gmail.com";
 const RECAPTCHA_SITE_KEY = "6LcvLoYsAAAAAOVG2f1P769zLJTbAB3tx-RG85Hp";
 
 export default function Contact() {

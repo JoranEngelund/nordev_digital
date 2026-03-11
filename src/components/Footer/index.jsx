@@ -52,7 +52,7 @@ export default function Footer() {
               <s.Title>Kontakt</s.Title>
 
               <s.Link href="mailto:nordevdigital@gmail.com">
-                kontakt@nordevdigital.no
+                nordevdigital@gmail.com
               </s.Link>
 
               <s.Text>Oslo, Norge</s.Text>
@@ -68,8 +68,8 @@ export default function Footer() {
           </s.Copyright>
 
           <s.BottomLinks>
-            <a href="/personvern">Personvern</a>
-            <a href="/cookies">Cookies</a>
+            <a href="personvern">Personvern</a>
+            <a href="cookies">Cookies</a>
           </s.BottomLinks>
         </s.Bottom>
       </s.Container>

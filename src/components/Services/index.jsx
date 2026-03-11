@@ -72,15 +72,16 @@ export default function Services() {
       <s.Container>
         <Reveal delay={0.3}>
           <s.SectionHeading>
-            <s.Eyebrow>Tjenester og priser</s.Eyebrow>
+            <s.Eyebrow>Tjenester</s.Eyebrow>
             <s.Title>
-              Moderne nettsider til{" "}
-              <s.GradientText>tydelige priser</s.GradientText>
+              Moderne nettsider som{" "}
+              <s.GradientText>fungerer for bedriften</s.GradientText>
             </s.Title>
             <s.Description>
               Vi bygger nettsider og digitale løsninger for bedrifter som vil
-              fremstå profesjonelle på nett. Løsninger tilpasses behov og
-              omfang. Ta kontakt for et uforpliktende estimat.
+              fremstå profesjonelle på nett. Våre løsninger er skreddersydde,
+              moderne og optimalisert for både design, ytelse og tydelig
+              kommunikasjon.
             </s.Description>
           </s.SectionHeading>
         </Reveal>
@@ -95,7 +96,6 @@ export default function Services() {
 
                 <s.CardTop>
                   <s.CardTitle>{service.title}</s.CardTitle>
-                  <s.CardPrice>{service.price}</s.CardPrice>
                 </s.CardTop>
 
                 <s.CardDescription>{service.description}</s.CardDescription>
@@ -122,17 +122,15 @@ export default function Services() {
                   <s.ExtraTitle>{item.title}</s.ExtraTitle>
                   <s.ExtraText>{item.text}</s.ExtraText>
                 </div>
-                <s.ExtraPrice>{item.price}</s.ExtraPrice>
               </s.ExtraCard>
             </Reveal>
           ))}
         </s.ExtrasGrid>
         <Reveal delay={0.3}>
           <s.Note>
-            Alle priser er fra-priser og avhenger av omfang, innhold,
-            funksjonalitet og eventuelle integrasjoner.
+            Løsninger tilpasses bedriftens behov, omfang og ønsket
+            funksjonalitet. Ta kontakt for et uforpliktende estimat.
           </s.Note>
-          <s.Note></s.Note>
         </Reveal>
       </s.Container>
     </s.Section>
