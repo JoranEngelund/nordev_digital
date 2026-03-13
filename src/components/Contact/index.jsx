@@ -170,8 +170,9 @@ export default function Contact() {
                     <option value="" disabled>
                       Velg tjeneste
                     </option>
-                    <option value="nettside">Nettside</option>
-                    <option value="redesign">Redesign</option>
+                    <option value="Start">Start</option>
+                    <option value="Vekst">Vekst</option>
+                    <option value="Pro">Pro</option>
                     <option value="nettbutikk">Nettbutikk</option>
                     <option value="vedlikehold">Vedlikehold</option>
                     <option value="annet">Annet</option>
